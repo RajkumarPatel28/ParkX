@@ -1,12 +1,15 @@
-Amit: 
-Servo STM32
+Amit Sharma:<br>
+• STM32F103C8T6<br>
+• Servo
 
-Meet: 
-http://amazon.ca/Sainsmart-HC-SR04-Ranging-Detector-Distance/dp/B004U8TOE6
-Ultrasonic Sensor (HC-SR04) STM32
+Meet Patel:<br>
+• STM32F103C8T6<br>
+• Ultrasonic Sensor (HC-SR04) http://amazon.ca/Sainsmart-HC-SR04-Ranging-Detector-Distance/dp/B004U8TOE6
 
-Muneeb:
-Buzzer STM32
+Muneeb Ahmed:<br>
+• STM32F103C8T6<br>
+• Buzzer
 
-Rajkumar:
-7-Segment Display STM32
+Rajkumar Patel:<br>
+• STM32F103C8T6<br>
+• 7-Segment Display
