@@ -131,7 +131,7 @@ uint32_t numTicks;
 	 distance = (numTicks + 0.0f)* 2.8 * speedOfSound;
 	 char string[100];
 
-	 	  sprintf(string,"distance: %f\n\n", distance);
+	 	  sprintf(string,"%f\n", distance);
 
 	 	  CDC_Transmit_FS(string, strlen(string));
 
