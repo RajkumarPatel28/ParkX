@@ -23,8 +23,7 @@ static void gpio_clean(void)
 
 static void display(void *args __attribute__((unused)))
 {
-    char spots, previous;
-    previous = '\0';
+    char spots;
 
     rcc_periph_clock_enable(RCC_GPIOA);
 
@@ -48,15 +47,11 @@ static void display(void *args __attribute__((unused)))
     {
         spots = usb_getc();
 
-        if (spots != previous)
-        {
-            previous = spots;
-            gpio_clean();
-        }
-
         switch (spots)
         {
         case '0':
+            gpio_clean();
+
             //Displays number 0
             gpio_clear(GPIOA,GPIO1);
             gpio_clear(GPIOA,GPIO2);
@@ -66,11 +61,15 @@ static void display(void *args __attribute__((unused)))
             gpio_clear(GPIOA,GPIO6);
             break;
         case '1':
+            gpio_clean();
+
             //Displays number 1
             gpio_clear(GPIOA,GPIO2);
             gpio_clear(GPIOA,GPIO3);
             break;
         case '2':
+            gpio_clean();
+
             //Displays number 2
             gpio_clear(GPIOA,GPIO1);
             gpio_clear(GPIOA,GPIO2);
@@ -79,6 +78,8 @@ static void display(void *args __attribute__((unused)))
             gpio_clear(GPIOA,GPIO4);
             break;
         case '3':
+            gpio_clean();
+
             //Displays number 3
             gpio_clear(GPIOA,GPIO1);
             gpio_clear(GPIOA,GPIO2);
@@ -87,6 +88,8 @@ static void display(void *args __attribute__((unused)))
             gpio_clear(GPIOA,GPIO4);
             break;
         case '4':
+            gpio_clean();
+
             //Displays number 4
             gpio_clear(GPIOA,GPIO6);
             gpio_clear(GPIOA,GPIO7);
@@ -94,6 +97,8 @@ static void display(void *args __attribute__((unused)))
             gpio_clear(GPIOA,GPIO3);
             break;
         case '5':
+            gpio_clean();
+
             //Displays number 5
             gpio_clear(GPIOA,GPIO1);
             gpio_clear(GPIOA,GPIO6);
@@ -102,6 +107,8 @@ static void display(void *args __attribute__((unused)))
             gpio_clear(GPIOA,GPIO4);
             break;
         case '6':
+            gpio_clean();
+
             //Displays number 6
             gpio_clear(GPIOA,GPIO1);
             gpio_clear(GPIOA,GPIO6);
@@ -111,12 +118,16 @@ static void display(void *args __attribute__((unused)))
             gpio_clear(GPIOA,GPIO5);
             break;
         case '7':
+            gpio_clean();
+
             //Displays number 7
             gpio_clear(GPIOA,GPIO1);
             gpio_clear(GPIOA,GPIO2);
             gpio_clear(GPIOA,GPIO3);
             break;
         case '8':
+            gpio_clean();
+
             //Displays number 8
             gpio_clear(GPIOA,GPIO1);
             gpio_clear(GPIOA,GPIO2);
@@ -127,6 +138,8 @@ static void display(void *args __attribute__((unused)))
             gpio_clear(GPIOA,GPIO7);
             break;
         case '9':
+            gpio_clean();
+
             //Displays number 9
             gpio_clear(GPIOA,GPIO1);
             gpio_clear(GPIOA,GPIO2);
