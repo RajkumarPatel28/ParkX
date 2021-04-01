@@ -3,8 +3,6 @@
  * Modified by: Amit Sharma 
  */
 
-#include <string.h>
-
 #include "FreeRTOS.h"
 #include "task.h"
 
