@@ -1,7 +1,5 @@
 //Name: Muneeb Ahmed
 
-#include <string.h>
-
 #include "FreeRTOS.h"
 #include "task.h"
 
