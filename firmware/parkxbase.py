@@ -29,7 +29,7 @@ if ser.isOpen():
 		else:
 			distance = float(db.child("distance").get().val())
 
-			while (distance >= 3 and distance <= 5): # Entry
+			while (distance >= 3 and distance <= 7): # Entry
 				distance = float(db.child("distance").get().val())
 				buzzer = db.child("buzzer").get().val()
 				db.child("vehicle").set("true")
@@ -39,7 +39,7 @@ if ser.isOpen():
 				if (buzzer == 'true'):
 					ser.write(b'h')
 
-				if (distance >= 11): # Vehicle has passed
+				if (distance > 13): # Vehicle has passed
 					db.child("vehicle").set("false")
 					ser.write(b'c')
 					
@@ -51,7 +51,7 @@ if ser.isOpen():
 					else:
 						spots = 0
 					 
-			while (distance >= 7 and distance <= 9): # Exit
+			while (distance >= 9 and distance <= 13): # Exit
 				distance = float(db.child("distance").get().val())
 				buzzer = db.child("buzzer").get().val()
 				db.child("vehicle").set("true")
@@ -60,7 +60,7 @@ if ser.isOpen():
 				if (buzzer == 'true'):
 					ser.write(b'h')
 
-				if (distance >= 11): # Vehicle has passed
+				if (distance > 13): # Vehicle has passed
 					db.child("vehicle").set("false")
 
 					if (spots != 9):
