@@ -1,0 +1,10 @@
+Executive Summary:
+
+We would like to inform you that ParkX, is developing a smart parking lot system to revolutionize
+parking. Every day, people waste their time looking for an available parking spot. It is ParkX’s sole
+goal to enhance the parking experience. With our smart parking lot, people can determine how many
+total and available parking spots are within a parking lot. This will help the user choose whether they
+would want to go to a certain parking lot or whether they would like to park somewhere else.
+Ultimately, ParkX will save money, effort, and time. 
+
+YouTube Project Link: https://youtu.be/tqJGmb5cwC8
